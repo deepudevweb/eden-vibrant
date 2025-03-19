@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 50 43% 95%;
+    --foreground: 150 30% 20%;
+
+    --card: 50 43% 96%;
+    --card-foreground: 150 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 20%;
+
+    --primary: 150 30% 20%;
+    --primary-foreground: 49 50% 80%;
+
+    --secondary: 49 50% 70%;
+    --secondary-foreground: 150 30% 20%;
+
+    --muted: 49 43% 92%;
+    --muted-foreground: 150 20% 30%;
+
+    --accent: 49 50% 70%;
+    --accent-foreground: 150 30% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 50 43% 96%;
+
+    --border: 150 15% 70%;
+    --input: 150 15% 70%;
+    --ring: 150 30% 30%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 30% 10%;
+    --foreground: 49 50% 80%;
+
+    --card: 150 30% 10%;
+    --card-foreground: 49 50% 80%;
+
+    --popover: 150 30% 10%;
+    --popover-foreground: 49 50% 80%;
+
+    --primary: 49 50% 80%;
+    --primary-foreground: 150 30% 10%;
+
+    --secondary: 150 20% 25%;
+    --secondary-foreground: 49 50% 80%;
+
+    --muted: 150 20% 25%;
+    --muted-foreground: 150 15% 65%;
+
+    --accent: 150 20% 25%;
+    --accent-foreground: 49 50% 80%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 49 50% 80%;
+
+    --border: 150 20% 25%;
+    --input: 150 20% 25%;
+    --ring: 49 50% 70%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-eden-offWhite text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium;
+  }
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-10 md:py-16 lg:py-20;
+}
+
+.container-sm {
+  @apply max-w-5xl mx-auto px-6 md:px-8;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/70 border border-white/20 shadow-sm;
+}
+
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Custom styles for smoother scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Elegant heading underlines */
+.heading-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 2px;
+  width: 3rem;
+  background-color: theme('colors.eden.gold');
+  transition: width 0.3s ease;
+}
+
+.heading-underline:hover::after {
+  width: 100%;
+}
+
+/* Image hover effects */
+.image-hover-zoom {
+  overflow: hidden;
+}
+
+.image-hover-zoom img {
+  transition: transform 0.7s ease;
+}
+
+.image-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Loading animation for images */
+.image-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Page transition animations */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
