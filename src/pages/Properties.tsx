@@ -225,14 +225,14 @@ const Properties = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-lg overflow-hidden image-hover-zoom">
                     <img
-                      src="https://images.unsplash.com/photo-1568626533859-1ef1ab11573d?q=80&w=2070&auto=format&fit=crop"
+                      src="https://media.istockphoto.com/id/1312587759/photo/beautiful-elegant-female-sitting-in-armchair-and-getting-intravenous-vitamin-drip-treatment.jpg?s=612x612&w=0&k=20&c=2YBoCXDJvcH6m7SruUVpBRhKZSmJMY4LCSYStq7sgJI="
                       alt="Wellness Center"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden image-hover-zoom">
                     <img
-                      src="https://images.unsplash.com/photo-1589459072535-550f4166bb45?q=80&w=2069&auto=format&fit=crop"
+                      src="https://static8.depositphotos.com/1004999/859/i/450/depositphotos_8596234-stock-photo-summer-landscape-with-green-grass.jpg"
                       alt="Garden View"
                       className="w-full h-full object-cover"
                     />
