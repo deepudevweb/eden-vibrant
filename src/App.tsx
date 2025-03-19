@@ -24,7 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navbar logo={edenLogo} />
-        <main className="pt-16">
+        <main>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
