@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import FeatureCard from "@/components/FeatureCard";
 import Hero from "@/components/Hero";
 import TestimonialCard from "@/components/TestimonialCard";
+import seniorcoupleimg from "../assets/images/senio-outdoor-couple.jpeg"
 
 const Index = () => {
   const heroImage = "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?q=80&w=2070&auto=format&fit=crop";
@@ -101,9 +102,9 @@ const Index = () => {
             <AnimatedSection animation="fade-in-right">
               <div className="rounded-lg overflow-hidden image-hover-zoom">
                 <img
-                  src="https://images.unsplash.com/photo-1601041318936-0ea0a75fd3b3?q=80&w=2070&auto=format&fit=crop"
+                  src={seniorcoupleimg}
                   alt="Senior couple enjoying time outdoors"
-                  className="w-full h-auto object-cover rounded-lg"
+                  className="w-full h-auto object-cover rounded-lg seniorcoupleimg"
                 />
               </div>
             </AnimatedSection>

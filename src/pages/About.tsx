@@ -11,9 +11,11 @@ import { Button as UButton } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import { SocialVideo } from "@/components/social/SocialVideo";
+import coupleactivityimg from "../assets/images/couple-activty.jpg"
+import aboutimg from "../assets/images/about-us-img.png"
 
 const About = () => {
-  const heroImage = "https://images.unsplash.com/photo-1558627272-bb8ec6197092?q=80&w=2070&auto=format&fit=crop";
+  
   
   const values = [
     {
@@ -83,7 +85,7 @@ const About = () => {
       <Hero
         title="About Eden Gracious Living"
         subtitle="Creating exceptional living experiences through comfort, care, community, and connection."
-        backgroundImage={heroImage}
+        backgroundImage={aboutimg}
         height="large"
       />
 
@@ -113,11 +115,11 @@ const About = () => {
             
             <AnimatedSection animation="fade-in-left" delay={200}>
               <div className="rounded-lg overflow-hidden shadow-lg image-hover-zoom">
-                <img
-                  src="https://images.unsplash.com/photo-1588351753197-64d8ab664b39?q=80&w=2070&auto=format&fit=crop"
-                  alt="Senior residents enjoying community activities"
-                  className="w-full h-auto object-cover"
-                />
+              <img
+  src={coupleactivityimg}
+  alt="Senior residents enjoying community activities"
+  className="w-full h-auto object-cover"
+/>
               </div>
             </AnimatedSection>
           </div>

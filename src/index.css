@@ -212,3 +212,7 @@ html {
   height: 2.5rem;
   aspect-ratio: 2/.9;
 }
+
+.seniorcoupleimg {
+  filter: brightness(0.8);
+}
