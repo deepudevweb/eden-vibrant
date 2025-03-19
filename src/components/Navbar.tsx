@@ -152,7 +152,7 @@ const Navbar = () => {
       <div className="container-sm flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center" onClick={closeMenu}>
-          <img src={Navlogo} alt="Eden" className="h-10 w-auto" />
+          <img src={Navlogo} alt="Eden" className="h-10 w-auto header-logo" />
         </NavLink>
 
         {/* Desktop Navigation */}

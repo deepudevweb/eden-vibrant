@@ -202,8 +202,8 @@ html {
   opacity: 0;
   transition: opacity 300ms;
 }
-/* 
+
 .header-logo {
-  height: 1.5em;
-  vertical-align: middle;
-} */
+  height:2.5rem;
+  aspect-ratio: 1/.9;
+}
