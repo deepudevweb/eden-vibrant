@@ -211,6 +211,7 @@ html {
 .header-logo {
   height: 2.5rem;
   aspect-ratio: 2/.9;
+  transform: scale(1.30);
 }
 
 .seniorcoupleimg {
